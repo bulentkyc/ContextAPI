@@ -1,3 +1,2 @@
 import React from 'react';
-
-export default React.createContext('Click Me');
+export default React.createContext({contextData:'purple'});
