@@ -1,10 +1,13 @@
 import MyFirstContext from '../MyFirstContext';
+import {useContext} from 'react';
 import C from "./C";
 
 export default function () {
+    const context = useContext(MyFirstContext);
     return (
-        <MyFirstContext.Provider value = "Please Click">
+        <div>
+            <button>B-{context}</button>
             <C/>
-        </MyFirstContext.Provider>
+        </div>
     );
 }
