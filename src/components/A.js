@@ -3,9 +3,8 @@ import {useContext} from 'react';
 import B from "./B";
 
 export default function (props) {
-    
-    console.log('A is rendered');
     const context = useContext(MyFirstContext)
+    console.log('A is rendered');
     return (
         <div>
             <button>A-{context.contextData}</button>

@@ -1,7 +1,7 @@
 import MyFirstContext from '../MyFirstContext';
 import {useContext} from 'react';
 
-export default function () {
+export default function (props) {
     const context = useContext(MyFirstContext);
     console.log(context)
     console.log('C is rendered');

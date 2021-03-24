@@ -2,11 +2,9 @@ import MyFirstContext from '../MyFirstContext';
 import {useContext} from 'react';
 import C from "./C";
 import Provider from '../Provider';
-
 export default function (props) {
-    console.log('B is rendered');
     const context = useContext(MyFirstContext);
-    context.updater('');
+    console.log('B is rendered', context);
     return (
         <Provider>
         <div>
