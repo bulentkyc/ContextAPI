@@ -1,7 +1,6 @@
 import './App.css';
 import A from './components/A';
 import Child1 from './components/Child1.js';
-import MyFirstContext from './MyFirstContext';
 import Provider from './Provider';
 
 function App(props) {
@@ -12,7 +11,7 @@ function App(props) {
       <Provider>
         <A color = 'black'/>
       </Provider>
-      <Child1/>
+      <Child1 color = 'purple'/>
       </header>
     </div>
   );

@@ -7,7 +7,7 @@ export default function (props) {
     console.log('A is rendered');
     return (
         <div>
-            <button>A-{context.contextData}</button>
+            <button>A-{context.contextData}-{props.color}</button>
             <B color = {props.color}/>
         </div>
     );

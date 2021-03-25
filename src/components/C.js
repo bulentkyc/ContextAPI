@@ -6,7 +6,8 @@ export default function (props) {
     console.log(context)
     console.log('C is rendered');
     context.updater('Red');
+    props.color.setstate('red');
     return (
-        <button>C-{context.contextData}</button>
+        <button>C-{context.contextData}-{props.color.state}</button>
     );
 }
